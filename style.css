@@ -1,0 +1,20 @@
+.anima1 p {
+    position: relative;
+    left: 500px;      /*Posição final caso , padrão  é 0*/
+    top: 500px;      /*Posição final caso , padrão  é 0*/
+    width: 260px;
+    height: 260px;
+    border:  1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 1px 1px 4px;
+    animation-name: anima1;
+    animation-duration: 3s;
+}
+
+@keyframes anima1{
+    from{left: -260px; top: -260px;} /*from : de*/
+    to{left: 500px; top: 500px;}    /*to : para*/
+    
+}
