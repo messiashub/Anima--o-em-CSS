@@ -9,12 +9,25 @@
     padding: 10px;
     text-align: justify;
     box-shadow: 1px 1px 4px;
-    animation-name: anima1;
-    animation-duration: 3s;
+    animation-name:anima1,anima2,anima3,anima4;
+    animation-duration: 2s;
+    animation-timing-function: linear; /*animando mantendo o tempo linear*/
+    animation-delay: 0s, 2s, 4s, 6s, 8s  /*delay: dois delay, um pra cada animação*/
 }
 
 @keyframes anima1{
-    from{left: -260px; top: -260px;} /*from : de*/
-    to{left: 500px; top: 500px;}    /*to : para*/
-    
+    from{left: 500px; top: 500px;} /*from :começa em baixo*/
+    to{left: 0px; top: 0px;}    /*to : vai para cima */    
+}
+@keyframes anima2{
+     from{background: red; left:0px; top: 0px;}  /*Começa em cima vermelho*/
+     to{background: #ffff; left: 0px; top:0px;} /*fica em cima por 2 segundos*/
+}
+@keyframes anima3{
+    from{background: #ffff;left: 0px; top: 0px;} /*branco em cima por 4s*/
+    to{background: #fff; left: 0px; top:0px;}
+}
+@keyframes anima4{
+    from{left: 0px; top: 0px;}  /*retorna para a posição original*/
+    to{left: 500px; top: 500px;}
 }
